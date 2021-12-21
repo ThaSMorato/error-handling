@@ -58,7 +58,9 @@ const onStop = async (e) => {
   process.exit(0);
 };
 
-//SIGINT - ctrl c
+//SIGINT - ctrl + c
 //SIGTERM - KILL
+//SIGHUP - windows console closed
+//SIGBREAK - windows crtl + break
 
-["SIGTERM", "SIGINT"].forEach((event) => process.on(event, onStop));
+["SIGTERM", "SIGINT", "SIGHUP", "SIGBREAK"].forEach((event) => process.on(event, onStop));
