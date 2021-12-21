@@ -1,0 +1,10 @@
+{
+  "name": "graceful-shutdown",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "mongodb": "^4.2.2"
+  }
+}
